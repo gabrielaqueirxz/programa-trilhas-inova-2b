@@ -4,7 +4,7 @@
 
 Este projeto foi desenvolvido como parte de um desafio proposto pelo Governo do Estado do Maranhão, em parceria com a SECTI e FAPEMA, para criar um formulário de inscrição estático que servirá como base para um futuro sistema de cadastro do programa de formação em tecnologia. O objetivo era elaborar uma página web responsiva e visualmente atraente que permitisse a coleta de informações pessoais, endereço e a escolha de uma trilha de aprendizagem.
 
-<img src="https://github.com/user-attachments/assets/d327c31a-a2dd-4ae6-af8f-359b76f5a801" width="50%">
+<img src="https://github.com/user-attachments/assets/42ac5bae-4f38-48be-bfcd-ee207db6c6d6" width="50%">
 
 
 ## 🔨 Funcionalidades do projeto
