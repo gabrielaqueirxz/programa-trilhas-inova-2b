@@ -20,8 +20,6 @@ O projeto consiste em um formulário de inscrição estático para o Programa Tr
 
 ## 📁 Acesso ao projeto
 
-[Veja o projeto final em funcionamento]().
-
 Neste repositório você tem acesso a todo o material produzido para o Desafio 2 do Programa Trilhas Inova 2B.
 
 ## 🛠️ Abrir e rodar o projeto
