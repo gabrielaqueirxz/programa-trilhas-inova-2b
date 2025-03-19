@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/icon.png" type="image/x-icon" />
+    <title>Formulário - Trilhas Inova</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header-menu">
+            <a class="header-menu-link" href="home.html">Home</a>
+            <a class="header-menu-link" href="index.html">Formulário</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="./assets/img//professional-woman.svg" alt="Mulher mexendo no computador">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-head">
+                    <div class="title">
+                        <h1>Formulário de inscrição</h1>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Preencha os dados abaixo para realizar sua inscrição no Programa Trilhas</h3>
+                    </div>
+                </div>
+
+                <div class="personal-informations">
+                    <div class="informations-title">
+                        <h4>Informações do participante</h4>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome-completo">Nome completo</label>
+                            <input id="nome-completo" type="text" name="nome-completo" placeholder="Digite seu nome completo" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="data-nascimento">Data de nascimento</label>
+                            <input id="data-nascimento" type="date" name="data-nascimento" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="cpf">CPF</label>
+                            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="email">Digite seu email</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="numero">Celular</label>
+                            <input id="numero" type="tel" name="numero" placeholder="(xx) x xxxx-xxxx" required>
+                        </div>
+                    </div>
+    
+                    <div class="sex-group">
+                        <label for="sexo">Sexo</label> 
+                        <select name="sexo" id="sexo">
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="other">Outro</option>
+                            <option value="none">Prefiro não dizer</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-id">
+                        <label for="identidade">Documento de identidade</label>
+                        <div class="upload-container">
+                          <input type="file" id="identidade" name="identidade" required>
+                          <label for="identidade" class="upload-label">
+                            <img src="./assets/img/upload.png" alt="Ícone de upload">
+                            <p>Clique aqui para selecionar o arquivo</p>
+                          </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="address-title">
+                        <h4>Endereço residencial</h4>
+                    </div>
+
+                    <div class="address-group">
+                        <div class="input-box">
+                            <label for="addres-cep">Cep</label>
+                            <input id="address" type="number" name="address" placeholder="xxxxx-xxx" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="address-rua">Rua</label>
+                            <input id="address-rua" type="text" name="address-rua" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="address-numero">Número da residência</label>
+                            <input id="address-numero" type="number" name="address-numero" required>
+                        </div>
+
+                        
+                        <div class="state-group">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" disabled>
+                                <option value="maranhao">MA</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="address-cidade">Cidade</label>
+                            <input id="address-cidade" type="text" name="address-cidade" placeholder="Digite o nome da sua cidade" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trilhas">
+                    <div class="trihas-title">
+                        <h4>Trilhas de aprendizagem</h4>
+                    </div>
+
+                    <label for="trilhas-input">Selecione apenas uma trilha</label>
+                    <div class="trilhas-group" required>
+                        <div class="trilhas-group">
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="frontend">
+                                <div class="trilha-card">
+                                    <img src="./assets/img/icon-front.png" alt="Front-end">
+                                    <span>Programação Front-end</span>
+                                </div>
+                            </label>
+                    
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="backend">
+                                <div class="trilha-card">
+                                    <img src="./assets/img/icon-back.png" alt="Back-end">
+                                    <span>Programação Back-end</span>
+                                </div>
+                            </label>
+                    
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="jogos">
+                                <div class="trilha-card">
+                                    <img src="./assets/img/icon-jogos.png" alt="Jogos">
+                                    <span>Programação de Jogos</span>
+                                </div>
+                            </label>
+                    
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="design">
+                                <div class="trilha-card">
+                                    <img src="./assets/img/icon-design.png" alt="Design">
+                                    <span>Design e Experiência</span>
+                                </div>
+                            </label>
+                    
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="dados">
+                                <div class="trilha-card">
+                                    <img src="./assets/img/icon-dados.png" alt="Dados">
+                                    <span>Ciência de Dados</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terms">
+                    <div class="terms-input">
+                        <input type="checkbox" id="terms-conditions" required/>
+                        <label class="text">Declaro que li e concordo com os <strong>Termos e Condições</strong>
+                            e com a <strong>Política de Privacidade</strong>.</label>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="reset" id="botao-cancelar">Cancelar</button>
+                    <button type="submit" id="botao-inscricao">Fazer inscrição</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
