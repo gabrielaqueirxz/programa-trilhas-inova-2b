@@ -24,7 +24,7 @@ Neste repositório você tem acesso a todo o material produzido para o Desafio 2
 
 ## 🛠️ Abrir e rodar o projeto
 
-Para abrir e rodar o projeto, basta abrir o aquivo `home.html` no navegador.
+Para abrir e rodar o projeto, basta baixar a pasta e abrir o aquivo `home.html` no navegador.
 
 ## 📚 Mais informações sobre o Programa Trilhas Inova 2B
 
