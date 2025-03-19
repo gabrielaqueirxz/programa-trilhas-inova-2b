@@ -1,4 +1,4 @@
-![Desafio 2: Front-end de um Formulário](https://github.com/user-attachments/assets/bf985e8c-bac9-48b3-9373-6dd1545e4655)
+![Desafio 2: Front-end de um Formulário](https://github.com/gabrielaqueirxz/programa-trilhas-inova-2b/issues/1#issue-2933206976)
 
 # Sobre o projeto
 
