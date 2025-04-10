@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="/assets/img/icon-lista.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <title>Programa Trilhas Inova 2B</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        
+        <div class="form-container sign-in">
+            <form>
+                <h1>Entrar</h1>
+                <h4>Faça login usando seu nome de usuário e senha</h4>
+
+                <input type="text" placeholder="Seu nome de usuário" name="username" required>
+
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Sua senha" name="password" id="login-password" required>
+                    <span class="toggle-password" id="toggle-login-password">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+  
+                <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+                <button type="submit">Entrar</button>
+
+                <span>ou faça login usando as redes sociais</span>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container sign-up">
+
+            <form id="signup-step1" class="signup-form" style="display: flex;">
+                <h1>Criar uma conta</h1>
+                <span>Crie um nome de usuário e senha para se registrar</span>
+                
+                <input type="text" placeholder="Nome de usuário" required>
+                <span class="error-message"></span>
+
+                <input type="email" placeholder="Email" required>
+                <span class="error-message" id="email-error"></span>
+
+                <input type="password" placeholder="Senha" required>
+                <span class="error-message" id="password-error"></span>
+                
+                <button type="button" id="next-to-step2">Próximo</button>
+            </form>
+
+            <form id="signup-step2" class="signup-form" style="display: none;">
+                <div class="form-scroll-content">
+                    <h1>Informações Pessoais</h1>
+                    <span>Complete suas informações pessoais</span>
+                    
+                    <input type="text" placeholder="Nome Completo" required>
+                    <span class="error-message"></span>
+
+                    <input type="text" placeholder="CPF" max="11" id="cpf" required>
+                    <span class="error-message"></span>
+
+                    <input type="tel" placeholder="Celular" required>
+                    <span class="error-message"></span>
+
+                    <input type="number" placeholder="Idade" min="16" max="120" required>
+                    <span class="error-message"></span>
+                    
+                    <select required>
+                        <option value="">Selecione o sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    
+                    <div class="input-id">
+                        <label for="identidade">Documento de identidade</label>
+                        <div class="upload-container">
+                            <input type="file" id="identidade" name="identidade" accept="image/*" required>
+                            <label for="identidade" class="upload-label">
+                                <img src="./assets/img/upload.png" alt="Ícone de upload">
+                                <p>Clique aqui para selecionar o arquivo</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" id="prev-to-step1">Voltar</button>
+                    <button type="button" id="next-to-step3">Próximo</button>
+                </div>
+            </form>
+
+            <form id="signup-step3" class="signup-form" style="display: none;">
+                <div class="form-scroll-content">
+                    <h1>Endereço Residencial</h1>
+                    <span>Informe seu endereço completo</span>
+                    
+                    <input type="text" id="cep" placeholder="CEP" required>
+                    <span class="error-message"></span>
+
+                    <input type="text" id="rua" placeholder="Rua" required disabled>
+                    <input type="text" id="numero" placeholder="Número" required>
+                    <span class="error-message"></span>
+
+                    <input type="text" id="complemento" placeholder="Complemento (opcional)">
+                    <input type="text" id="bairro" placeholder="Bairro" required disabled>
+                    <input type="text" id="cidade" placeholder="Cidade" required disabled>
+                    
+                    <select id="estado" required disabled>
+                        <option value="">Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" id="prev-to-step2">Voltar</button>
+                    <button type="button" id="next-to-step4">Próximo</button>
+                </div>
+            </form>
+            
+            <form id="signup-step4" class="signup-form" style="display: none;">
+                <div class="form-scroll-content">
+                    <h1>Seleção de Trilha</h1>
+                    <span>Escolha sua trilha de aprendizado e aceite os termos para finalizar seu cadastro</span>
+                    
+                    <div class="trilha-options" required>
+                        <h3>Selecione sua trilha:</h3>
+                        <div class="trilha-options">
+                            <div class="option">
+                                <input type="radio" id="frontend" name="trilha" value="frontend" required>
+                                <label for="frontend">
+                                    <img src="/assets/img/icon-front.png" alt="Front-end" class="trilha-icon">
+                                    Programação Front-end
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="backend" name="trilha" value="backend" required>
+                                <label for="backend">
+                                    <img src="/assets/img/icon-back.png" alt="Back-end" class="trilha-icon">
+                                    Programação Back-end
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="jogos" name="trilha" value="jogos" required>
+                                <label for="jogos">
+                                    <img src="/assets/img/icon-jogos.png" alt="Jogos" class="trilha-icon">
+                                    Programação de Jogos
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="design" name="trilha" value="design" required>
+                                <label for="design">
+                                    <img src="/assets/img/icon-design.png" alt="Design" class="trilha-icon">
+                                    Design e Experiência
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="dados" name="trilha" value="dados" required>
+                                <label for="dados">
+                                    <img src="/assets/img/icon-dados.png" alt="Dados" class="trilha-icon">
+                                    Ciência de Dados
+                                </label>
+                            </div>
+                            <span id="trilha-error" class="error-message">Por favor, selecione uma trilha</span>
+                        </div>
+                    </div>
+                    
+                    <div class="terms-container">
+                        <input type="checkbox" id="terms" required>
+                        <label class="text">Declaro que li e concordo com os <strong>Termos e Condições</strong>
+                            e com a <strong>Política de Privacidade</strong>.</label>
+                    </div>
+                    <span id="terms-error" class="error-message">Aceite os termos para continuar</span>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" id="prev-to-step3">Voltar</button>
+                    <button type="submit" id="finalizar-cadastro">Finalizar Cadastro</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="welcome-screen" class="welcome-screen" style="display: none;">
+            <h1>Seja bem-vindo(a), <span id="welcome-username"></span>!</h1>
+            <h4>Agradecemos por sua participação</h4>
+            <button class="hidden" id="logout">Sair</button>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Olá!</h1>
+                    <p>Já possui uma conta? Clique no botão abaixo para entrar na sua conta.</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+        
+                <div class="toggle-panel toggle-left-two">
+                    <h1>Complete seu cadastro!</h1>
+                    <p>Termine de preencher as informações para registrar sua conta.</p>
+                    <button class="hidden" id="back-to-step1">Voltar</button>
+                </div>
+        
+                <div class="toggle-panel toggle-left-three">
+                    <h1>Falta pouco!</h1>
+                    <p>Preencha seu endereço para prosseguir.</p>
+                    <button class="hidden" id="back-to-step2">Voltar</button>
+                </div>
+                
+                <div class="toggle-panel toggle-left-four">
+                    <h1>Quase lá!</h1>
+                    <p>Escolha sua trilha de aprendizado e aceite os termos para finalizar.</p>
+                    <button class="hidden" id="back-to-step3">Voltar</button>
+                </div>
+        
+                <div class="toggle-panel toggle-right">
+                    <h1>Seja bem-vindo(a)!</h1>
+                    <p>Não possui uma conta? Clique no botão abaixo para se registrar.</p>
+                    <button class="hidden" id="register">Criar conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="feedback-modal">
+        <div class="feedback-content">
+            <span class="close-feedback">&times;</span>
+            <h2>Cadastro realizado com sucesso!</h2>
+            <p>Como foi sua experiência com o nosso formulário de cadastro?</p>
+            
+            <form id="feedback-form">
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" required />
+                    <label for="star1">★</label>
+                </div>
+                
+                <textarea id="feedback-comment" placeholder="Deixe seu comentário (opcional)..."></textarea>
+                
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
