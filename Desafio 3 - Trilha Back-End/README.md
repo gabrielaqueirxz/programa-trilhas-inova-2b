@@ -30,7 +30,7 @@ Login de Usuário: Usuários já registrados podem fazer login com suas credenci
 
 ## 📁 Acesso ao projeto
 
-[Veja o projeto final em funcionamento]().
+[Veja o projeto final em funcionamento](https://programa-trilhas-inova-2b-f88b-rngmgy22q.vercel.app/).
 
 Neste repositório você tem acesso a todo o material produzido para o Desafio 2 do Programa Trilhas Inova 2B.
 
@@ -43,3 +43,17 @@ Neste repositório você tem acesso a todo o material produzido para o Desafio 2
 ## 📚 Mais informações sobre o Programa Trilhas Inova 2B
 
 O edital do programa pode ser acessado [aqui](https://secti.ma.gov.br/uploads/secti/docs/EDITAL_SECTI_FAPEMA_N%C2%BA_07_2024_%E2%80%93_TRILHAS_2B.pdf).
+
+## 🔧 Fururas melhorias
+- Não permitir nomes de usuários iguais;
+- Não permitir que utilizem o mesmo email para mais de uma conta;
+- Melhorar as mensagens de erros e validações;
+- Tornar o layout mais responsivo;
+- Aprimorar a validação do email.
+
+## 💡 Sugestões e Feedbacks
+- Tem alguma sugestão ou feedback para o nosso código? Entre em contato conosco ou mande um pull request!
+
+## 📱 Contato
+- Amanda Mikely: amandamikely@gmail.com
+- Gabriela Queiroz: gabiqrz25@gmail.com
