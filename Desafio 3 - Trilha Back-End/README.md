@@ -30,7 +30,7 @@ Login de Usuário: Usuários já registrados podem fazer login com suas credenci
 
 ## 📁 Acesso ao projeto
 
-[Veja o projeto final em funcionamento](https://programa-trilhas-inova-2b-f88b-rngmgy22q.vercel.app/).
+[Veja o projeto final em funcionamento]([https://programa-trilhas-inova-2b-f88b-rngmgy22q.vercel.app/](https://programa-trilhas-inova-2b-git-77a612-gabrielaqueirxzs-projects.vercel.app)).
 
 Neste repositório você tem acesso a todo o material produzido para o Desafio 2 do Programa Trilhas Inova 2B.
 
